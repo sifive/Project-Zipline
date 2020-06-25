@@ -333,11 +333,11 @@ module nx_ram_2rw
            always @(posedge clk) begin
               if (_csa && _wea) begin
                  mem[_adda] <= dina_i;
-                 `DEBUG("Writing %x to %d", dina_i, _adda);
+//                  `DEBUG("Writing %x to %d", dina_i, _adda);
               end
               if (_csb && _web) begin
                  mem[_addb] <= dinb_i;
-                 `DEBUG("Writing %x to %d", dinb_i, _addb);
+//                  `DEBUG("Writing %x to %d", dinb_i, _addb);
               end
            end
 

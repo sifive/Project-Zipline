@@ -255,7 +255,7 @@ module nx_ram_1r1w #(parameter integer
            always @(posedge clk) begin
               if (!_web) begin
                  mem[_wa] <= din_i;
-                 `DEBUG("Writing %x to %d", din_i, _wa);
+//                  `DEBUG("Writing %x to %d", din_i, _wa);
               end
            end
         

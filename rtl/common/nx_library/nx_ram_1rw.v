@@ -239,7 +239,7 @@ module nx_ram_1rw
                  for (int jj=0; jj< DEPTH; jj++) begin : latch
                     if (we_clk[jj]) begin 
                        mem[jj] = dat_r;
-                       `DEBUG("Writing %x to %d", dat_r, jj);
+//                        `DEBUG("Writing %x to %d", dat_r, jj);
                     end
                  end : latch
               end : wr_word
@@ -260,7 +260,7 @@ module nx_ram_1rw
                  always @(posedge clk)
                    if (cs && we) begin
                       mem[add] <= din_i;
-                      `DEBUG("Writing %x to %d", din_i, add);
+//                       `DEBUG("Writing %x to %d", din_i, add);
                    end
            
 
