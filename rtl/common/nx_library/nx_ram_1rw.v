@@ -93,7 +93,7 @@ module nx_ram_1rw
                 
 `ifndef SYNTHESIS
    initial
-     `INFO("depth %d width %d ports mwrite,read mask_gran %d", DEPTH, WIDTH, WIDTH / BWEWIDTH);
+     `INFO("depth %d width %d ports mrw mask_gran %d", DEPTH, WIDTH, WIDTH / BWEWIDTH);
 `endif
 
 
