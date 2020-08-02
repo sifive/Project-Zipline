@@ -6,52 +6,6 @@
 *
 *************************************************************************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 `include "ccx_std.vh"
 `include "messages.vh"
 
@@ -146,15 +100,9 @@ module nx_ram_2rw
                 
 `ifndef SYNTHESIS
    initial
-     `INFO("%dx%db SPRAM", DEPTH, WIDTH);
+     `INFO("depth %d width %d ports mrw,mrw mask_gran %d", DEPTH, WIDTH, WIDTH / BWEWIDTH);
 `endif
 
-
-
-   
-      
-
-   
    generate
 
       case ({SPECIALIZE, DEPTH, WIDTH, IN_FLOP, OUT_FLOP, RD_LATENCY})
