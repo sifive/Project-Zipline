@@ -104,7 +104,7 @@ module nx_ram_1r1w #(parameter integer
       
 `ifndef SYNTHESIS
       initial
-        `INFO("width %d depth %d mwrite,read mask_gran %d", WIDTH, DEPTH, WIDTH / BWEWIDTH);
+        `INFO("depth %d width %d ports mwrite,read mask_gran %d", DEPTH, WIDTH, WIDTH / BWEWIDTH);
 `endif
 
       case ({SPECIALIZE, DEPTH, WIDTH, IN_FLOP, OUT_FLOP, RD_LATENCY})
