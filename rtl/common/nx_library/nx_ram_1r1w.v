@@ -6,24 +6,6 @@
 *
 *************************************************************************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 `include "ccx_std.vh"
 `include "messages.vh"
 
@@ -122,12 +104,8 @@ module nx_ram_1r1w #(parameter integer
       
 `ifndef SYNTHESIS
       initial
-        `INFO("%dx%db 1R1WRAM", DEPTH, WIDTH);
+        `INFO("width %d depth %d mwrite,read mask_gran %d", WIDTH, DEPTH, WIDTH / BEWIDTH);
 `endif
-      
-      
-      
-
 
       case ({SPECIALIZE, DEPTH, WIDTH, IN_FLOP, OUT_FLOP, RD_LATENCY})
 
