@@ -6,52 +6,6 @@
 *
 *************************************************************************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 `include "ccx_std.vh"
 `include "messages.vh"
 
@@ -139,7 +93,7 @@ module nx_ram_1rw
                 
 `ifndef SYNTHESIS
    initial
-     `INFO("%dx%db SPRAM", DEPTH, WIDTH);
+     `INFO("depth %d width %d ports mwrite,read mask_gran %d", DEPTH, WIDTH, WIDTH / BWEWIDTH);
 `endif
 
 
